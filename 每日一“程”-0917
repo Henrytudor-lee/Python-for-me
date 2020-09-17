@@ -1,0 +1,30 @@
+print(-----------宾客晚餐----------）
+guest_list = ['Tommy','Athur','Poly','Jerry','Johnny']
+message = 'I\'d like to invite you to dinner with me !'
+del guest_list[2]
+guest_list.insert(1,'Neo')
+print('Dear',guest_list[0],',')
+print(message)
+print('Dear',guest_list[1],',')
+print(message)
+print('Dear',guest_list[2],',')
+print(message)
+print('Dear',guest_list[3],',')
+print(message)
+print('Dear',guest_list[4],',' )
+print(message)
+guest_amount = len(guest_list)
+print('The amount of guest in this party is',str(guest_amount),'!')
+
+print(-----------旅游地------------)
+travel_place = ['Paris','NewYork','Roman','London','Birmingham']
+print(travel_place)
+print(sorted(travel_place))
+print(travel_place)
+travel_place.reverse()
+print(travel_place)
+travel_place.reverse()
+print(travel_place)
+travel_place.sort()
+print(travel_place)
+travel_place.sort(reverse=True)
