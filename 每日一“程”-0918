@@ -1,0 +1,25 @@
+#continue  语句______________________________
+>>>for i in range (10):
+       if i%2 != 0:
+          print(i)
+          continue
+       i += 2
+       print (i)
+2
+1
+4
+3
+6
+5
+8
+7
+10
+9
+#break   语句________________________________
+bingo = '爹'
+answer = input ('请输入你最喜欢听的一个字：')
+while True:
+    if answer == bingo:
+        break
+    answer = input ('抱歉，输错了哦')
+print ('乖儿子，真乖。')
