@@ -1,0 +1,40 @@
+#密码安全性检查代码-----------------------------------            ---------------抄的小甲鱼的，属实想不到怎么区分判定
+#低级：1、由数字或字母组成；2、长度小于8位
+#中级：1、由数字、字母或特殊字符（两种组合）；2、长度不低于8位
+#高级：1、由数字、字母及特殊字符；2、密码开头为字母；3、长度不低于16位  -------------小甲鱼在这一条首字母并没有涉及
+sym ='\'\'\"\"!@#$%^&*()_+~-=`[]{};:,./<>?\|'
+chars ='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+nums ='0123456789'
+password = input('请输入您的密码:')
+length = len(password)
+while () or length == 0:
+    password = input("输入的密码有误为空，请重新输入：")
+if length <= 8:
+    flag_len = 1
+elif 8<length<16:
+    flag_len = 2
+else:
+    flag_len = 3
+flag_con = 0
+for each in password:
+    if each in sym:
+        flag_con += 1      #淦，明白了，相当于把低中高的判定等价于了分数值的判定，特殊符号，长度，首字母，组合分别各一分。
+        break
+for each in password:
+    if each in chars:
+        flag_con += 1
+        break
+for each in password:
+    if each in nums:
+        flag_con +=1
+        break
+while 1:
+    print('您的密码安全级别评定为：',end='')
+    if flag_len == 1 or flag_con == 1:
+        print('低')
+    elif flag_len ==2 or flag_con == 2:
+        print('中')
+    else:
+        print('高')
+        break
+    break
