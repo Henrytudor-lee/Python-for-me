@@ -1,0 +1,14 @@
+#进制转换_____________________
+q = input ('请输入一个整数（输入Q结束程序）：')
+while q !=  'Q':
+    if q.isdigit():
+        q=int(q)            #经典注意int和str的格式
+        print ('十进制->十六进制：%d -> %#x' %(q,q))    #注意#的问题
+        print ('十进制->八进制：%d->%#o'%(q,q))
+        print ('十进制->二进制：%d->'%q,bin(q))         #bin（）二进制
+        q = input('请输入一个整数（输入Q结束程序）：')
+    else:
+        if q=="Q":
+            break
+        else:
+            q = input('输入错误，请输入一个整数（输入Q结束程序）：')
