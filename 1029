@@ -1,0 +1,11 @@
+#16th lesson's practise 修改
+name = input('请输入待查找的用户名;')
+score = [['mitu',85],['heiye',80],['xiaobuding',65],['fuluwawa',95],['yijing',90]]
+IsFind = False         #习惯用参数来定义变量的正确与否
+for each in score:
+    if name in each:    #别tm再用a == b了，太呆了，字符串格式，数据差别
+        print(name + 'score is ',each[1])
+        IsFind = True
+        break           #break使用时注意缩进
+if IsFind == False:
+    print('The score you want search is not existed')
