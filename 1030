@@ -1,0 +1,11 @@
+#power(x, y)为计算并返回x的y次幂的值_1.0---自己想的版本，x，y可以为浮点数
+def power(x,y):
+    result = 1
+    result = x ** y
+    return result
+#power(x, y)为计算并返回x的y次幂的值_2.0---小甲鱼版本，存在问题，y值不能为浮点数
+def power(x,y):
+    result = 1
+    for i in range(y):
+        result *= x
+    return result
